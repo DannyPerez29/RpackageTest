@@ -8,5 +8,5 @@ test_that("str_split_one() errors input if input lenght > 1", {
 
 test_that("str_split_one() exposes features of strigr::str_split()", {
   expect_equal(str_split_one("a,b,c", ",", n = 2), c("a", "b,c"))
-  expect_equal(str_split_one("a.b", strinr::fixed(".")), c("a", "b"))
+  expect_equal(str_split_one("a.b", stringr::fixed(".")), c("a", "b"))
 })
